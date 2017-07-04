@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+<title>Fong's Nails Kerrville</title>
+<!-- CODED BY ENDERCRAFT2319 -->
+<!-- DO NOT STEAL PLEASE! -->
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<style>
+p {
+font-family: 'Ubuntu', sans-serif;
+}
+body, html {
+max-width: 100%;
+margin: 0;
+}
+#colorful {
+-webkit-animation: color 3s infinite;
+}
+#logotxt {
+  line-height: 0;
+  position: fixed;
+  font-size: 90px;
+ top: -17.5px;
+ left: 105px;
+ /* margin-left: auto;
+ margin-right: auto;
+  right: 0;
+  left: 0;
+  text-align: center; */
+  z-index: 102;
+  font-family: 'Arizonia', Helvetica, sans-serif;
+  color: white;
+  text-shadow: 5px 5px 0px rgba(0,0,0,0.4); 
+}
+#unanchoredlogo {
+  line-height: 0;
+  font-size: 15vw;
+  color: #54B4FF;
+  text-align: center;
+  font-family: 'Arizonia', Helvetica, sans-serif;
+    text-shadow: 1px 1px white, -1px -1px #444;
+}
+@-webkit-keyframes color {
+  0% { -webkit-filter: hue-rotate(0deg); }
+  6.25% { -webkit-filter: hue-rotate(22.5deg); }
+  12.5% { -webkit-filter: hue-rotate(45deg); }
+  18.75% { -webkit-filter: hue-rotate(67.5deg); }
+  25% { -webkit-filter: hue-rotate(90deg); }
+  31.25% { -webkit-filter: hue-rotate(112.5deg); }
+  37.5% { -webkit-filter: hue-rotate(135deg); }
+  43.75% { -webkit-filter: hue-rotate(157.5deg); }
+  50% { -webkit-filter: hue-rotate(180deg); }
+  56.25% { -webkit-filter: hue-rotate(202.5deg); }
+  62.5% { -webkit-filter: hue-rotate(225deg); }
+  68.75% { -webkit-filter: hue-rotate(247.5deg); }
+  75% { -webkit-filter: hue-rotate(270deg); }
+  81.25% { -webkit-filter: hue-rotate(292.5deg); }
+  87.5% { -webkit-filter: hue-rotate(315deg); }
+  93.75% { -webkit-filter: hue-rotate(337.5deg); }
+  100%  { -webkit-filter: hue-rotate(360deg); }
+}
+
+.stack1 {
+position: absolute;
+right: 0px;
+top: 500px
+}
+.stack1.start {
+        top: 500px
+        position: absolute;
+        right: 0px;
+	-webkit-animation: stack1 1.25s ease-out forwards;
+}
+
+@-webkit-keyframes stack1 {
+	0% {right: -25%; opacity: 0;}
+	100% { right: 0%; opacity: 1;}
+}
+#logo {
+position: fixed;
+border-radius: 50%;
+left: 5px;
+top: 5px;
+float: left;
+width: 90px;
+border-radius: 50%;
+z-index: 101;
+box-shadow: 0px 0px 20px black;
+}
+#header {
+box-shadow: 0px 0px 15px #2B4F81; 
+z-index: 100;
+position: fixed; 
+top: 0; 
+width: 100%; 
+height: 100px; 
+background-color: #00B2EE; 
+border-bottom-style: solid; 
+border-bottom-color: #33a1de; 
+border-bottom-width: 2px;
+}
+#blocker {
+width: 100%; 
+height: 150px;
+}
+#blurcontain {
+position: absolute;
+top:150px;
+left: 150px;
+z-index: -2;
+width: 300px;	
+border: 1px solid transparent;
+}
+#blurred {
+    left:-15px;
+    right:-15px;
+    top:-15px;
+    bottom:-15px;
+    filter:blur(15px);
+}
+.ribbon {
+ font-size: 7.5vw !important;
+ /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+ width: 50%;
+    
+ position: relative;
+ background: #ba89b6;
+ color: #fff;
+ text-align: center;
+ padding: 0.75em 2em; /* Adjust to suit */
+ margin: 0em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.125em solid #986794;
+ z-index: -3;
+}
+.ribbon:before {
+ left: -1.375em;
+ border-right-width: 1.25em;
+ border-left-color: transparent;
+ box-shadow: 0px 4px 50px #888888;
+}
+.ribbon:after {
+ right: -1.375em;
+ border-left-width: 1.25em;
+ border-right-color: transparent;
+ box-shadow: 0px 4px 50px #888888;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #804f7c transparent transparent transparent;
+ bottom: -1em;
+  z-index: -2;
+}
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+</style>
+</head>
+<body style="background-color: #f2f2f2;">
+<script>
+
+
+function isElementInViewport(elem) {
+    var $elem = $(elem);
+    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+    var viewportTop = $(scrollElem).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    var elemTop = Math.round( $elem.offset().top );
+    var elemBottom = elemTop + $elem.height();
+    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+}
+function checkAnimation() {
+    var $elem = $('.stack1');
+    if (isElementInViewport($elem)) {$elem.addClass('start');} else {$elem.removeClass('start');}}
+$(window).scroll(function(){
+    checkAnimation();
+});
+</script>
+
+<div id="header">
+<img id="logo" src=".\logoshadowapp2.png" alt="logo" />
+<div id="linecheck">
+<h1 id="logotxt" style="white-space: nowrap;"><b>Fong's Nails</b></h1>
+</div>
+</div>
+<div id="blocker"></div>
+<script>
+
+</script>
+<h3 style="text-align:center; font-family: 'Raleway', sans-serif; font-size: 4vw;color:white;">So... What is</h3>
+<h1 id="unanchoredlogo" class="ribbon"><strong class="ribbon-content">Fong's Nails?</strong></h1>
+
+<div id="blurcontain">
+<div id="blurred">
+<img src=".\blurred.jpg" alt="blurred" />
+</div>
+</div>
+
+<div style="text-align:center;background-color:white;width: calc(100% - 100px);padding: 5px;position: absolute;left: 50px;box-shadow: 0px 0px 20px #888888;">
+<p>Fong's Nails is a small buisness located at 819 Junction Hwy, Kerrville, TX 78028. We paint nails, wax eyebrows, do manicures, pedicures, and much more. If you would like to schedule an appointment, then call us up at +1 (830)-895-5995 or stop by, but we also accept walk-ins. At Fong's Nails we try to evaluate our three core values</p>
+</div>
+<div style="background-color: white; height: 0px;">
+</div> 
+
+<!-- rainbow nail -->
+<img style="z-index: 1; width: 25%;" class="stack1" id="handimg" src=".\hand.png" alt="hand" />
+<div style="z-index: 2; width:100%;" class="stack1">
+<img style="z-index: 2; width: 25%; float: right;" class="IDK" id="colorful" src=".\nail.png" alt="nail" />
+</div>
+<!-- bottle
+<div style="z-index: 2; width:100%;" class="stack1">
+<img style="z-index: 2; width: 25%; float: right;" id="colorful" src=".\bottle2.png" alt="nail" /> -->
+</div>
+<script>
+
+if ($(window).width() < $(window).height()) {
+document.getElementById("handimg").style.width = "100%";
+document.getElementById("colorful").style.width = "100%";
+}
+else {
+document.getElementById("handimg").style.width = "25%";
+document.getElementById("colorful").style.width = "25%";
+}
+
+window.addEventListener("resize", function(event){
+if ($(window).width() < $(window).height()) {
+document.getElementById("handimg").style.width = "100%";
+document.getElementById("colorful").style.width = "100%";
+}
+else {
+document.getElementById("handimg").style.width = "25%";
+document.getElementById("colorful").style.width = "25%";
+}
+}, false);
+</script>
+<!--rainbow nail image -->
+</body>
+</html>
